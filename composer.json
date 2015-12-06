@@ -1,0 +1,21 @@
+{
+    "name": "dmckeever/acme",
+    "authors": [
+        {
+            "name": "Damien McKeever",
+            "email": "damienmckeever@hotmail.co.uk"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^1.1",
+        "vlucas/phpdotenv": "~1.1",
+        "illuminate/database": "5.1.*",
+        "altorouter/altorouter": "1.1.0",
+        "respect/validation": "^1.0",
+        "duncan3dc/blade": "2.2.*"
+
+    },
+    "autoload": {
+      "psr-4": {"Acme\\": "src/"}
+    }
+}
