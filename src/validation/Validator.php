@@ -11,6 +11,7 @@ class Validator
         $errors = [];
 
         foreach ($validation_data as $name => $value) {
+
             $rules = explode("|", $value);
             foreach ($rules as $rule) {
                 $exploded = explode(":", $rule);
@@ -32,7 +33,7 @@ class Validator
                         }
                         break;
                     default:
-                        // do nothing
+                        $errors[] = "No value found!";
                 }
             }
         }
