@@ -10,4 +10,9 @@ class PageController extends BaseController
     {
         echo $this->blade->render("home");
     }
+
+    public function getShowPage()
+    {
+        echo "foo!";
+    }
 }
